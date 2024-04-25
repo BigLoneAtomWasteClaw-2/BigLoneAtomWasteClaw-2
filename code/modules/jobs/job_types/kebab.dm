@@ -1019,7 +1019,7 @@
 
 	ears = /obj/item/radio/headset/headset_towndoctor
 	neck = /obj/item/clothing/neck/stethoscope
-	uniform = /obj/item/clothing/under/f13/medic
+	uniform = /obj/item/clothing/under/f13/doctor
 	gloves = /obj/item/pda/medical
 	l_pocket = /obj/item/storage/bag/chemistry
 	r_pocket = /obj/item/storage/bag/money/small/settler
