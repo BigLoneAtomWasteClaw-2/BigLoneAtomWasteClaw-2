@@ -207,8 +207,8 @@
 		)
 
 	outfit = /datum/outfit/job/kebab/f13highconstable
-	access = list(ACCESS_MILITIA,ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINING, ACCESS_GATEWAY)
-	minimal_access = list(ACCESS_MILITIA,ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINING, ACCESS_GATEWAY)
+	access = list(ACCESS_MILITIA,ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINING, ACCESS_GATEWAY, ACCESS_TOWN_DOC)
+	minimal_access = list(ACCESS_MILITIA,ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINING, ACCESS_GATEWAY, ACCESS_TOWN_DOC)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/kebab,
@@ -1001,8 +1001,8 @@
 		/datum/outfit/loadout/towndoctor,
 		/datum/outfit/loadout/apothecary,
 		/datum/outfit/loadout/nurse)
-	access = list(ACCESS_BAR, ACCESS_CLINIC)
-	minimal_access = list(ACCESS_BAR, ACCESS_CLINIC)
+	access = list(ACCESS_BAR, ACCESS_TOWN_DOC)
+	minimal_access = list(ACCESS_BAR, ACCESS_TOWN_DOC)
 
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -1017,7 +1017,7 @@
 	name = "Town Doctor"
 	jobtype = /datum/job/kebab/f13towndoctor
 
-	ears = /obj/item/radio/headset/headset_doctor
+	ears = /obj/item/radio/headset/headset_towndoctor
 	neck = /obj/item/clothing/neck/stethoscope
 	uniform = /obj/item/clothing/under/f13/medic
 	gloves = /obj/item/pda/medical
@@ -1031,8 +1031,8 @@
 /datum/outfit/loadout/towndoctor
 	name = "Town Doctor"
 	uniform = /obj/item/clothing/under/f13/doctor
-	suit = /obj/item/clothing/suit/flakjack
-	shoes = /obj/item/clothing/shoes/jackboots
+	suit = /obj/item/clothing/suit/toggle/labcoat
+	shoes = /obj/item/clothing/shoes/laceup
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/m1911/custom = 1,
 		/obj/item/ammo_box/magazine/m45 = 3,

@@ -31532,6 +31532,7 @@
 	id = 151
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/poddoor/shutters/clinic,
 /turf/open/floor/wood/f13/oak,
 /area/f13/clinic)
 "mLT" = (
@@ -32152,6 +32153,7 @@
 /obj/structure/window/fulltile/wood{
 	max_integrity = 140
 	},
+/obj/machinery/door/poddoor/shutters/clinic,
 /turf/open/floor/wood/f13/oak,
 /area/f13/clinic)
 "mXC" = (
@@ -33380,10 +33382,6 @@
 	name = "metal plating"
 	},
 /area/f13/city)
-"nyV" = (
-/obj/machinery/defibrillator_mount/loaded,
-/turf/closed/wall/f13/wood,
-/area/f13/clinic)
 "nyY" = (
 /obj/structure/curtain{
 	color = "#845f58"
@@ -55353,6 +55351,9 @@
 "wOp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/optable,
+/obj/machinery/defibrillator_mount/loaded{
+	pixel_y = 32
+	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/clinic)
 "wOq" = (
@@ -69324,7 +69325,7 @@ fXh
 fXh
 ktB
 cNU
-xUh
+ybT
 xUh
 xUh
 xUh
@@ -69582,7 +69583,7 @@ fXh
 ktB
 cNU
 hVd
-ybT
+xUh
 xUh
 xUh
 xUh
@@ -69837,7 +69838,7 @@ fyf
 fyf
 fXh
 ktB
-nyV
+cNU
 wOp
 xUh
 xUh
@@ -70608,7 +70609,7 @@ fyf
 fyf
 fXh
 ktB
-nyV
+cNU
 wOp
 xUh
 xUh
@@ -70867,7 +70868,7 @@ fXh
 ktB
 cNU
 leT
-ybT
+xUh
 xUh
 xUh
 xUh
@@ -71123,7 +71124,7 @@ fyf
 fXh
 ktB
 cNU
-xUh
+ybT
 xUh
 xUh
 xUh

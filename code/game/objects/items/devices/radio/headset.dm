@@ -426,7 +426,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	keyslot2 = new /obj/item/encryptionkey/headset_towncommand
 	command = TRUE
 
-/obj/item/radio/headset/headset_doctor
+/obj/item/radio/headset/headset_towndoctor
 	name = "Town doctor headset"
 	desc = "A headset used by the town's doctors.\nTo access the medical channel, use :m."
 	icon_state = "cent_headset"
