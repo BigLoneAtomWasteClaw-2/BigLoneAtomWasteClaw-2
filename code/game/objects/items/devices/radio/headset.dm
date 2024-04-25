@@ -426,20 +426,12 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	keyslot2 = new /obj/item/encryptionkey/headset_towncommand
 	command = TRUE
 
-/obj/item/radio/headset/headset_church
-	name = "Church headset"
-	desc = "A headset used by the Church.\nTo access the Church channel, use :m."
+/obj/item/radio/headset/headset_doctor
+	name = "Town doctor headset"
+	desc = "A headset used by the town's doctors.\nTo access the medical channel, use :m."
 	icon_state = "cent_headset"
 	keyslot = new /obj/item/encryptionkey/headset_med
 	keyslot2 = new /obj/item/encryptionkey/headset_town
-
-/obj/item/radio/headset/headset_church_leader
-	name = "Church leader headset"
-	desc = "A headset used by the Church high priest.\nTo access the Church channel, use :m / Command, use :c / Town, use :f"
-	icon_state = "cent_headset"
-	keyslot = new /obj/item/encryptionkey/headset_med
-	keyslot2 = new /obj/item/encryptionkey/headset_towncommand
-	command = TRUE
 
 /obj/item/radio/headset/militia
 	name = "Town milita commander headset"
@@ -458,7 +450,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/headset_constable
 	name = "Complete Town headset"
-	desc = "A headset used by the Church.\nTo access the Church channel, use :m / Command, use :c / Town, use :f / Blackwater, use :q / Rustwalkers, use :e"
+	desc = "A headset used by the town's constable.\nTo access the medical channel, use :m / Command, use :c / Town, use :f / Blackwater, use :q / Rustwalkers, use :e"
 	icon_state = "cent_headset"
 	keyslot = new /obj/item/encryptionkey/headset_constable
 	keyslot2 = new /obj/item/encryptionkey/headset_towncommand

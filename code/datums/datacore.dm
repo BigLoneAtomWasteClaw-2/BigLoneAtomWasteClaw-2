@@ -102,7 +102,6 @@
 	var/list/flw = list()
 	var/list/tribe = list()
 	var/list/was = list()
-	var/list/church = list()
 	var/list/merchant = list()
 	var/list/rustwalker = list()
 	var/list/misc = list()
@@ -138,9 +137,6 @@
 			department = 1
 		if(rank in GLOB.kebab_positions)
 			kebab[name] = rank
-			department = 1
-		if(rank in GLOB.church_positions)
-			church[name] = rank
 			department = 1
 		if(rank in GLOB.legion_positions)
 			leg[name] = rank
@@ -214,14 +210,9 @@
 		for(var/name in merchant)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[merchant[name]]</td></tr>"
 			even = !even
-	if(length(church))
-		dat += "<tr><th colspan=3>Church</th></tr>"
-		for(var/name in church)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[church[name]]</td></tr>"
-			even = !even
 	if(length(rustwalker))
 		dat += "<tr><th colspan=3>Rustwalker</th></tr>"
-		for(var/name in church)
+		for(var/name in rustwalker)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[rustwalker[name]]</td></tr>"
 			even = !even
 	// misc guys

@@ -390,13 +390,6 @@
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
-"abz" = (
-/obj/structure/chair/wood/normal{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/carpet/purple,
-/area/f13/cotc)
 "abC" = (
 /obj/structure/window/fulltile/house{
 	dir = 2;
@@ -421,12 +414,6 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/f13/brotherhood/surface)
-"abG" = (
-/obj/structure/soundbox{
-	pixel_y = 6
-	},
-/turf/closed/wall/r_wall/rust,
-/area/f13/cotc)
 "abH" = (
 /turf/open/floor/wood/f13/oak{
 	icon_state = "oakfloor4-broken"
@@ -442,9 +429,6 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
-"abM" = (
-/turf/closed/wall/rust,
-/area/f13/cotc)
 "abN" = (
 /turf/closed/wall/mineral/concrete,
 /area/f13/kebab)
@@ -1687,13 +1671,6 @@
 	icon_state = "greendirtyfull"
 	},
 /area/f13/building)
-"age" = (
-/obj/structure/bed/pod,
-/obj/item/bedsheet/black,
-/obj/effect/landmark/start/f13/cotc/servitor,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "agf" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -1962,12 +1939,6 @@
 	},
 /turf/open/floor/f13,
 /area/f13/brotherhood/surface)
-"ahd" = (
-/obj/structure/table/wood/junk,
-/obj/item/kirbyplants/random,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "ahe" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -2201,16 +2172,6 @@
 	icon_state = "housewood1-broken"
 	},
 /area/f13/ncr)
-"aib" = (
-/obj/structure/bookcase,
-/obj/item/book/manual/thebook,
-/obj/item/book/manual/thebook,
-/obj/item/book/manual/thebook,
-/obj/item/book/manual/thebook,
-/obj/item/book/manual/thebook,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "aid" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -3005,16 +2966,6 @@
 	},
 /turf/open/floor/plating/f13/outside/roof/metal,
 /area/f13/kebab)
-"alo" = (
-/obj/structure/fluff/railing{
-	color = "#A47449";
-	dir = 1
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/city)
 "alp" = (
 /obj/structure/chair/booth{
 	icon_state = "booth_west_south"
@@ -3133,13 +3084,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building)
-"alP" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "alQ" = (
 /obj/structure/closet/cardboard,
 /obj/effect/decal/cleanable/dirt,
@@ -3517,16 +3461,6 @@
 	},
 /turf/open/floor/wood/f13/stage_r,
 /area/f13/building)
-"anz" = (
-/obj/structure/table/wood/junk,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/grown/rose{
-	name = "Cathedral Rose";
-	desc = "A flower that represents the peace and harmony.";
-	pixel_y = 14
-	},
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "anA" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -3955,15 +3889,6 @@
 	icon_state = "neutralrustyfull"
 	},
 /area/f13/building)
-"apc" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 1;
-	light_power = 0.5;
-	pixel_x = 1;
-	pixel_y = -20
-	},
-/turf/closed/wall/r_wall/rust,
-/area/f13/cotc)
 "apd" = (
 /obj/structure/fluff/railing/corner{
 	dir = 1
@@ -4382,15 +4307,6 @@
 	icon_state = "housewood2"
 	},
 /area/f13/building)
-"aqu" = (
-/obj/machinery/libraryscanner,
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 1;
-	pixel_y = 12
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "aqw" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -4510,13 +4426,6 @@
 	icon_state = "oakfloor3"
 	},
 /area/f13/legion)
-"aqR" = (
-/obj/structure/chair/bench{
-	icon_state = "dropshipright"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/f13/outside/roof,
-/area/f13/cotc)
 "aqT" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -4788,16 +4697,6 @@
 	icon_state = "whitedirtysolid"
 	},
 /area/f13/clinic)
-"arP" = (
-/obj/structure/table/wood/fancy/purple,
-/obj/item/paper_bin,
-/obj/item/grown/rose{
-	name = "Cathedral Rose";
-	desc = "A flower that represents the peace and harmony."
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/carpet/purple,
-/area/f13/cotc)
 "arQ" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -4968,12 +4867,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/kebab)
-"asF" = (
-/obj/structure/table/wood/settler,
-/obj/machinery/computer/libraryconsole/bookmanagement,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "asG" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -5162,13 +5055,6 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
-"atj" = (
-/obj/structure/chair/bench{
-	icon_state = "dropshipleft"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/f13/outside/roof,
-/area/f13/cotc)
 "atl" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
@@ -5261,17 +5147,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/clinic)
-"atH" = (
-/obj/machinery/door/unpowered/securedoor{
-	req_access_txt = "145";
-	name = "Servitor Chambers"
-	},
-/obj/structure/curtain{
-	color = "#5c131b"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "atI" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -5299,13 +5174,6 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
-"atN" = (
-/obj/structure/chair/office{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/carpet/purple,
-/area/f13/cotc)
 "atP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/bars,
@@ -5379,16 +5247,6 @@
 	icon_state = "housewood2"
 	},
 /area/f13/ncr)
-"aua" = (
-/obj/structure/fluff/railing{
-	dir = 4;
-	color = "#A47449"
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/cotc)
 "aub" = (
 /turf/open/floor/carpet/red,
 /area/f13/ncr)
@@ -5403,11 +5261,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building)
-"auf" = (
-/obj/structure/falsewall/rust,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "aug" = (
 /obj/structure/nest/ghoul{
 	max_mobs = 2
@@ -6706,9 +6559,6 @@
 	},
 /turf/open/floor/wood/f13,
 /area/f13/building)
-"azv" = (
-/turf/closed/wall/r_wall/rust,
-/area/f13/cotc)
 "azw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/remains/human,
@@ -6889,13 +6739,6 @@
 	},
 /turf/open/transparent/openspace,
 /area/f13/legion)
-"aAk" = (
-/obj/structure/bed/pod,
-/obj/item/bedsheet/rd,
-/obj/effect/landmark/start/f13/cotc/highpriest,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "aAl" = (
 /turf/closed/indestructible/rock,
 /area/f13/caves)
@@ -7308,17 +7151,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
-"aBN" = (
-/obj/structure/lattice/catwalk/clockwork,
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/cotc)
 "aBS" = (
 /obj/effect/turf_decal/delivery/white,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
@@ -7858,15 +7690,6 @@
 /obj/machinery/light,
 /turf/open/floor/f13/wood,
 /area/f13/kebab)
-"aDQ" = (
-/obj/structure/fluff/railing{
-	color = "#A47449"
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/cotc)
 "aDT" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
@@ -8241,17 +8064,6 @@
 	dir = 1
 	},
 /area/f13/clinic)
-"aFp" = (
-/obj/machinery/door/unpowered/securedoor{
-	req_access_txt = "145";
-	name = "High Priest Chambers"
-	},
-/obj/structure/curtain{
-	color = "#5c131b"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "aFq" = (
 /obj/structure/railing/corner{
 	pixel_x = -25;
@@ -8956,16 +8768,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"aIo" = (
-/obj/structure/table/wood/settler,
-/obj/item/paper{
-	info = "<p>Recommend Pricing Scheme:<br />50 caps: Non-stimpack first aid.<br />100 caps: Price of stimpaks used or sold.<br />100-150 caps: Price of surgery<br />200-300 caps: Price of revival.</p>";
-	name = "pricing"
-	},
-/obj/item/assembly/signaler/advanced,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "aIp" = (
 /obj/structure/noticeboard/captain{
 	desc = "The second Evidence Board shows a small amount of what looks to be crime scenes with corpses all connected to eachother.";
@@ -9056,18 +8858,6 @@
 	dir = 16
 	},
 /area/f13/clinic)
-"aIA" = (
-/obj/structure/table,
-/obj/item/flashlight/lantern{
-	pixel_y = 6;
-	on = 1;
-	light_on = 1;
-	pixel_x = 5;
-	icon_state = "lantern-on"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/f13/outside/roof,
-/area/f13/cotc)
 "aIB" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/yellow/side{
@@ -9104,12 +8894,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/caves)
-"aIG" = (
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/cotc)
 "aIH" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/stage_b/outdoors,
@@ -9148,16 +8932,6 @@
 	},
 /turf/open/floor/f13,
 /area/f13/brotherhood/surface)
-"aIO" = (
-/obj/structure/fluff/railing{
-	dir = 5;
-	color = "#A47449"
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/cotc)
 "aIQ" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -9494,15 +9268,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/purple,
 /area/f13/building)
-"aKa" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 4;
-	light_power = 0.4;
-	light_range = 5
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "aKb" = (
 /obj/structure/chair/wood/worn,
 /obj/effect/decal/cleanable/dirt,
@@ -9538,13 +9303,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
-"aKg" = (
-/obj/structure/railing,
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/cotc)
 "aKh" = (
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -9679,11 +9437,6 @@
 	sunlight_state = 1
 	},
 /area/f13/wasteland)
-"aKL" = (
-/obj/structure/destructible/tribal_torch/wall/lit,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "aKM" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood{
@@ -9744,11 +9497,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
-"aKU" = (
-/obj/structure/closet/cabinet,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "aKX" = (
 /obj/structure/railing/corner{
 	dir = 4
@@ -9981,8 +9729,8 @@
 /area/f13/building)
 "aLX" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
+/turf/closed/wall/r_wall/rust,
+/area/f13/city)
 "aMa" = (
 /obj/structure/railing/handrail/legion/underlayer{
 	dir = 9
@@ -10214,11 +9962,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"aMR" = (
-/obj/structure/dresser,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "aMS" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "housewindowvertical"
@@ -10428,16 +10171,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"aNz" = (
-/obj/structure/fluff/railing{
-	color = "#A47449";
-	dir = 1
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/cotc)
 "aNA" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
@@ -10548,16 +10281,6 @@
 /obj/structure/decoration/clock/old/active,
 /turf/closed/wall/f13/store,
 /area/f13/building)
-"aNV" = (
-/obj/structure/fluff/railing{
-	dir = 10;
-	color = "#A47449"
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/cotc)
 "aNY" = (
 /obj/structure/table/wood,
 /obj/item/warpaint_bowl,
@@ -10988,14 +10711,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building)
-"aPu" = (
-/obj/structure/lattice/catwalk/clockwork,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/cotc)
 "aPv" = (
 /obj/structure/table/wood,
 /obj/item/documents{
@@ -11125,16 +10840,6 @@
 /area/f13/brotherhood/surface)
 "aPW" = (
 /turf/closed/indestructible/rock,
-/area/f13/city)
-"aPX" = (
-/obj/structure/railing/corner{
-	color = "#A47449";
-	dir = 4
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
 /area/f13/city)
 "aPY" = (
 /obj/effect/turf_decal/stripes/asteroid/line{
@@ -11299,16 +11004,6 @@
 /obj/item/stock_parts/cell,
 /turf/open/floor/plasteel/f13/vault_floor,
 /area/f13/enclave)
-"aQB" = (
-/obj/structure/fluff/railing{
-	dir = 4;
-	color = "#A47449"
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/city)
 "aQC" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
@@ -12025,12 +11720,6 @@
 /obj/structure/junk/cabinet,
 /turf/open/floor/plating/f13/outside/roof/metal,
 /area/f13/kebab)
-"aSO" = (
-/obj/structure/bed/old,
-/obj/effect/landmark/start/f13/cotc/acolyte,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "aSP" = (
 /obj/structure/barricade/bars,
 /obj/structure/table/wood/poker,
@@ -12286,16 +11975,6 @@
 	dir = 1
 	},
 /area/f13/brotherhood/surface)
-"aTV" = (
-/obj/structure/fluff/railing{
-	dir = 6;
-	color = "#A47449"
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/cotc)
 "aTW" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/oak,
@@ -12684,12 +12363,6 @@
 /obj/item/bodypart/l_arm,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/clinic)
-"aVn" = (
-/obj/structure/closet/cabinet,
-/obj/item/storage/fancy/candle_box,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "aVr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/sofa/corp/left{
@@ -13112,16 +12785,6 @@
 /obj/item/card/id/selfassign,
 /turf/open/floor/wood/f13,
 /area/f13/building)
-"aXe" = (
-/obj/structure/fluff/railing{
-	dir = 9;
-	color = "#A47449"
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/cotc)
 "aXf" = (
 /obj/structure/filingcabinet{
 	layer = 3.3;
@@ -13307,14 +12970,6 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building)
-"aXS" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 1;
-	pixel_y = 12
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "aXV" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/outside/woodalt,
@@ -13860,16 +13515,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building)
-"aZW" = (
-/obj/structure/fluff/railing{
-	dir = 8;
-	color = "#A47449"
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/cotc)
 "aZX" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -13964,11 +13609,6 @@
 /obj/effect/spawner/lootdrop/f13/blueprintLowMid,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/clinic)
-"bBr" = (
-/obj/item/kirbyplants/random,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "bBS" = (
 /obj/effect/turf_decal/delivery/white,
 /obj/mecha/combat/phazon/vertibird/brotherhood/loaded,
@@ -14146,26 +13786,6 @@
 /obj/item/megaphone,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
-"eKF" = (
-/obj/machinery/door/unpowered/securedoor{
-	req_access_txt = "145";
-	name = "Church"
-	},
-/obj/structure/curtain{
-	color = "#5c131b"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
-"eQO" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 4;
-	light_power = 0.4;
-	light_range = 5
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/f13/outside/roof,
-/area/f13/cotc)
 "ffx" = (
 /obj/item/reagent_containers/food/drinks/bottle/brown/beer,
 /turf/open/floor/plating/f13/outside/roof,
@@ -14301,19 +13921,6 @@
 /obj/structure/lattice/catwalk,
 /turf/open/transparent/openspace,
 /area/f13/wasteland)
-"gUa" = (
-/obj/structure/lattice/catwalk/clockwork,
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 4;
-	light_power = 0.4;
-	light_range = 5
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/cotc)
 "gUz" = (
 /obj/structure/railing{
 	dir = 8
@@ -14363,13 +13970,6 @@
 	icon_state = "housewood1-broken"
 	},
 /area/f13/ncr)
-"hsJ" = (
-/obj/structure/chair/wood/normal{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/carpet/purple,
-/area/f13/cotc)
 "hsZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/railing{
@@ -14562,14 +14162,6 @@
 /obj/effect/turf_decal/delivery/white,
 /turf/open/floor/plating/f13/outside/roof/metal,
 /area/f13/brotherhood/surface)
-"jas" = (
-/obj/machinery/door/unpowered/securedoor{
-	req_access_txt = "145";
-	name = "Church"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "jaH" = (
 /turf/closed/wall/rust,
 /area/f13/wasteland)
@@ -14652,23 +14244,6 @@
 "kCr" = (
 /turf/open/floor/plating/f13/outside/roof/wood,
 /area/f13/wasteland)
-"kJl" = (
-/obj/structure/table/wood/fancy/purple,
-/obj/item/folder/yellow,
-/obj/item/pen/fountain,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/carpet/purple,
-/area/f13/cotc)
-"kLV" = (
-/obj/structure/railing/corner{
-	color = "#A47449";
-	dir = 1
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/city)
 "kMw" = (
 /turf/open/floor/plating/f13/outside/roof/metal/verdigris,
 /area/f13/wasteland)
@@ -14829,16 +14404,6 @@
 	icon_state = "housewood2"
 	},
 /area/f13/ncr)
-"njh" = (
-/obj/structure/fluff/railing{
-	dir = 5;
-	color = "#A47449"
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/city)
 "nnQ" = (
 /obj/structure/chair/folding{
 	dir = 1
@@ -14916,10 +14481,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor,
 /area/f13/enclave)
-"nUN" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/carpet/purple,
-/area/f13/cotc)
 "obT" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood{
@@ -14933,13 +14494,6 @@
 "ozv" = (
 /turf/open/floor/plating/f13/outside/roof/metal/corrugated/red,
 /area/f13/wasteland)
-"oSj" = (
-/obj/structure/chair/wood/modern{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "oXW" = (
 /turf/open/floor/plating/wooden,
 /area/f13/wasteland)
@@ -14978,17 +14532,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor,
 /area/f13/enclave)
-"pvt" = (
-/obj/machinery/door/unpowered/securedoor{
-	req_access_txt = "145";
-	name = "Acolyte Chambers"
-	},
-/obj/structure/curtain{
-	color = "#5c131b"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "pvB" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -15001,10 +14544,6 @@
 	},
 /turf/open/floor/plating/f13/outside/roof/wood,
 /area/f13/wasteland)
-"pxM" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/f13/outside/roof,
-/area/f13/cotc)
 "pBr" = (
 /obj/structure/bed,
 /obj/item/bedsheet/black,
@@ -15013,13 +14552,6 @@
 	icon_state = "housewood2"
 	},
 /area/f13/ncr)
-"pIC" = (
-/obj/structure/curtain{
-	color = "#5c131b"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "pRM" = (
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 4
@@ -15030,13 +14562,6 @@
 /obj/effect/landmark/start/f13/Lancer,
 /turf/open/floor/plating/f13/outside/roof/metal,
 /area/f13/brotherhood/surface)
-"qnM" = (
-/obj/machinery/newscaster{
-	pixel_y = -28
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "qqs" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood{
@@ -15337,9 +14862,6 @@
 	icon_state = "housewood2"
 	},
 /area/f13/ncr)
-"uTC" = (
-/turf/open/floor/plating/f13/outside/roof,
-/area/f13/cotc)
 "vdR" = (
 /obj/machinery/door/unpowered/secure_NCR{
 	name = "NCR Secure Storage"
@@ -15419,14 +14941,6 @@
 /obj/item/reagent_containers/spray/cleaner,
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
-"wIu" = (
-/obj/structure/table/wood/settler,
-/obj/item/paper_bin,
-/obj/item/pen,
-/obj/item/pen,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
 "wMx" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "stagestairs"
@@ -23400,17 +22914,17 @@ asT
 asT
 asT
 asT
-azv
-azv
-azv
-azv
-aQB
-aQB
-aQB
-aQB
-aQB
-aQB
-aPX
+asT
+asT
+asT
+akC
+hbX
+hbX
+hbX
+hbX
+hbX
+hbX
+hbX
 hbX
 hbX
 hbX
@@ -23657,18 +23171,18 @@ aPW
 aPW
 aPW
 aPW
-azv
-aMR
-aAk
-azv
-aIA
-pxM
-pxM
-pxM
-pxM
-pxM
-njh
-aPX
+asT
+akC
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+hbX
+hbX
 hbX
 hbX
 hbX
@@ -23910,22 +23424,22 @@ aPL
 aPL
 aPL
 asT
-azv
-azv
-azv
-azv
-azv
-pIC
-pIC
-azv
-atj
-pxM
-pxM
-pxM
-pxM
-pxM
-pxM
-alo
+aPW
+asT
+asT
+asT
+asT
+akC
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+hbX
 hbX
 hbX
 hbX
@@ -24167,23 +23681,23 @@ aPL
 aPL
 aPL
 asT
-azv
+aPW
 aLX
-auf
-aLX
-alP
-aLX
-aLX
-azv
-aqR
-pxM
-pxM
-pxM
-pxM
-pxM
-pxM
-njh
-aPX
+akC
+akC
+akC
+akC
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+hbX
+hbX
 hbX
 hbX
 hbX
@@ -24424,23 +23938,23 @@ aPL
 aPL
 aPL
 asT
-azv
-aIG
-abM
-atN
-nUN
-aLX
-aLX
-apc
-pxM
-pxM
-pxM
-pxM
-pxM
-pxM
-pxM
-pxM
-alo
+aPW
+asT
+akC
+akC
+akC
+akC
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+hbX
 hbX
 hbX
 hbX
@@ -24681,24 +24195,24 @@ aPL
 aPL
 aPL
 asT
-azv
-azv
-azv
-kJl
-arP
-aLX
-aLX
-azv
-pxM
-pxM
-pxM
-pxM
-pxM
-pxM
-pxM
-pxM
-njh
-aPX
+aPW
+asT
+akC
+akC
+akC
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+hbX
+hbX
 hbX
 hbX
 hbX
@@ -24938,24 +24452,24 @@ aPL
 aPL
 aPL
 asT
+aPW
 asT
 asT
-azv
-hsJ
-hsJ
-aLX
-aLX
-jas
-pxM
-pxM
-pxM
-pxM
-pxM
-pxM
-pxM
-pxM
-pxM
-alo
+akC
+akC
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+hbX
 hbX
 hbX
 hbX
@@ -25197,22 +24711,22 @@ aPL
 asT
 aPW
 aPW
-azv
-aVn
-aKa
-aLX
-bBr
-azv
-pxM
-pxM
-pxM
-eQO
-pxM
-pxM
-pxM
-pxM
-pxM
-alo
+asT
+akC
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+hbX
 hbX
 hbX
 hbX
@@ -25454,22 +24968,22 @@ aPL
 asT
 asT
 aPW
-azv
-abM
-abM
-aFp
-abM
-azv
-azv
-azv
-azv
-azv
-jas
-azv
-azv
-azv
-azv
-azv
+asT
+akC
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
 hbX
 hbX
 hbX
@@ -25711,22 +25225,22 @@ aPL
 aPL
 asT
 aPW
-azv
-aKg
-aLX
-aLX
-bBr
-abM
-aPu
-aPu
-aBN
-aPu
-aPu
-aPu
-aBN
-aPu
-aPu
-azv
+asT
+akC
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
 hbX
 hbX
 hbX
@@ -25968,22 +25482,22 @@ aPL
 aPL
 asT
 aPW
-apc
-aKg
-aLX
-nUN
-aLX
-eKF
-aPu
-aXe
-aZW
-aNV
-aPu
-aXe
-aZW
-aNV
-aPu
-azv
+asT
+akC
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
 hbX
 hbX
 hbX
@@ -26225,22 +25739,22 @@ aPL
 aPL
 asT
 aPW
-azv
-aLX
-aLX
-nUN
-aKL
-abM
-aPu
-aNz
-aIG
-aDQ
-aPu
-aNz
-aIG
-aDQ
-aPu
-azv
+asT
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
 hbX
 hbX
 hbX
@@ -26482,22 +25996,22 @@ aPL
 aPL
 asT
 aPW
-azv
-aLX
-nUN
-nUN
-aLX
-abM
-aPu
-aNz
-aIG
-aDQ
-aPu
-aNz
-aIG
-aDQ
-aPu
-azv
+asT
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
 hbX
 hbX
 hbX
@@ -26739,22 +26253,22 @@ aPL
 aPL
 asT
 aPW
-abG
-anz
-nUN
-nUN
-aLX
-abM
-aPu
-aNz
-aIG
-aDQ
-aPu
-aNz
-aIG
-aDQ
-aPu
-azv
+asT
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
 hbX
 hbX
 hbX
@@ -26996,22 +26510,22 @@ aPL
 aPL
 asT
 aPW
-azv
-aLX
-nUN
-nUN
-aKL
-abM
-aPu
-aNz
-aIG
-aDQ
-aPu
-aNz
-aIG
-aDQ
-aPu
-azv
+asT
+akC
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
 hbX
 hbX
 hbX
@@ -27253,22 +26767,22 @@ aPL
 aPL
 asT
 aPW
-apc
-aLX
-nUN
-nUN
-aLX
-eKF
-aPu
-aIO
-aua
-aTV
-aPu
-aIO
-aua
-aTV
-aPu
-azv
+asT
+akC
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
 hbX
 hbX
 hbX
@@ -27510,22 +27024,22 @@ aPL
 aPL
 asT
 aPW
-azv
-bBr
-aLX
-aLX
-bBr
-abM
-aPu
-aPu
-gUa
-aPu
-aPu
-aPu
-gUa
-aPu
-aPu
-azv
+asT
+akC
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
 hbX
 hbX
 hbX
@@ -27767,22 +27281,22 @@ aPL
 aPL
 asT
 aPW
-azv
-abM
-pvt
-abM
-abM
-abM
-abM
-atH
-abM
-abM
-abM
-azv
-azv
-azv
-azv
-azv
+asT
+akC
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
 hbX
 hbX
 hbX
@@ -28024,22 +27538,22 @@ aPL
 aPL
 asT
 aPW
-azv
-aKU
-aLX
-aSO
-aSO
-abM
-aVn
-aLX
-bBr
-wIu
-aIo
-azv
-uTC
-uTC
-uTC
-alo
+asT
+akC
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+hbX
 hbX
 hbX
 hbX
@@ -28281,22 +27795,22 @@ aPL
 aPL
 asT
 aPW
-azv
-aKU
-nUN
-nUN
-aKL
-abM
-aVn
-nUN
-nUN
-nUN
-aKL
-azv
-uTC
-uTC
-uTC
-alo
+asT
+akC
+akC
+akC
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+agw
+hbX
 hbX
 hbX
 hbX
@@ -28538,22 +28052,22 @@ aPL
 aPL
 asT
 aPW
-abG
-aLX
-nUN
-nUN
-aLX
-eKF
-aLX
-nUN
-nUN
-nUN
-aLX
-azv
-uTC
-uTC
+asT
 akC
-kLV
+akC
+akC
+akC
+akC
+akC
+agw
+agw
+agw
+agw
+akC
+akC
+akC
+akC
+hbX
 hbX
 hbX
 hbX
@@ -28795,20 +28309,20 @@ aPL
 aPL
 asT
 aPW
-azv
-aXS
-nUN
-nUN
-aLX
-abM
-aqu
-nUN
-nUN
-nUN
-aLX
-azv
-uTC
-uTC
+asT
+akC
+akC
+akC
+akC
+akC
+akC
+akC
+akC
+akC
+akC
+akC
+akC
+akC
 akC
 akC
 hbX
@@ -29052,19 +28566,19 @@ aPL
 aPL
 asT
 aPW
-azv
-oSj
-nUN
-nUN
-aLX
-abM
-asF
-abz
-nUN
-nUN
-qnM
-azv
-uTC
+asT
+akC
+akC
+akC
+akC
+akC
+akC
+akC
+akC
+akC
+akC
+akC
+akC
 akC
 akC
 akC
@@ -29309,19 +28823,19 @@ aPL
 aPL
 asT
 aPW
-azv
-ahd
-aMR
-aSO
-aSO
-abM
-aib
-aLX
-aMR
-age
-age
-azv
-uTC
+asT
+akC
+akC
+akC
+akC
+akC
+akC
+akC
+akC
+akC
+akC
+akC
+akC
 akC
 akC
 akC
@@ -29566,18 +29080,18 @@ aPL
 aPL
 asT
 aPW
-azv
-azv
-azv
-azv
-azv
-azv
-azv
-azv
-abG
-azv
-azv
-azv
+asT
+asT
+asT
+asT
+asT
+asT
+asT
+asT
+asT
+asT
+asT
+asT
 asT
 asT
 asT

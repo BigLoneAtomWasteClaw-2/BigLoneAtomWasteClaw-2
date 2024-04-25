@@ -102,10 +102,6 @@ also be like that but I can't be arsed to go back and change them all*/
 #define ACCESS_CLINIC		133 //Oasis clinic access
 #define ACCESS_ENCLAVE 		134 //enclave minibunker
 
-#define ACCESS_COTC			145 //General Church
-#define ACCESS_COTC_ARMORY	146 //Church Armory
-#define ACCESS_COTC_SECRET	147 //Church Special Rooms
-
 #define ACCESS_MILITIA 148 //militia HQ
 
 	// DR2 VTCC Access, names should be self-explanatory

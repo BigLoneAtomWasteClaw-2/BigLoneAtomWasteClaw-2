@@ -32,15 +32,6 @@
 	category = CAT_MISC
 	always_available = FALSE
 
-/datum/crafting_recipe/church
-	name = "Church door"
-	result = /obj/machinery/door/unpowered/securedoor/church
-	reqs = list(/obj/item/stack/sheet/mineral/wood = 25)
-	time = 60
-	subcategory = CAT_MISCELLANEOUS
-	category = CAT_MISC
-	always_available = FALSE
-
 /datum/crafting_recipe/merchant
 	name = "Merchant door"
 	result = /obj/machinery/door/unpowered/securedoor/merchant

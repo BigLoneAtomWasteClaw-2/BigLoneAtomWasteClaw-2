@@ -84,7 +84,6 @@
 #define EXP_TYPE_ENCLAVE		"Enclave"
 #define EXP_TYPE_TRIBAL			"Tribal"
 #define EXP_TYPE_OUTLAW			"Outlaw"
-#define EXP_TYPE_CHURCH    		"Church"
 
 //Flags in the players table in the db
 #define DB_FLAG_EXEMPT 							(1<<0)

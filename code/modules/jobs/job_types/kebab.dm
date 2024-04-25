@@ -207,8 +207,8 @@
 		)
 
 	outfit = /datum/outfit/job/kebab/f13highconstable
-	access = list(ACCESS_COTC,ACCESS_MILITIA,ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINING, ACCESS_GATEWAY)
-	minimal_access = list(ACCESS_COTC,ACCESS_MILITIA,ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINING, ACCESS_GATEWAY)
+	access = list(ACCESS_MILITIA,ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINING, ACCESS_GATEWAY)
+	minimal_access = list(ACCESS_MILITIA,ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINING, ACCESS_GATEWAY)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/kebab,
@@ -986,3 +986,89 @@
 		/obj/item/megaphone = 1,
 		/obj/item/pda = 1,
 		/obj/item/reagent_containers/food/drinks/bottle/rotgut = 1)
+
+//Town Doctor
+/datum/job/kebab/f13towndoctor
+	title = "Town Doctor"
+	flag = F13TOWNDOCTOR
+	total_positions = 3
+	spawn_positions = 3
+	supervisors = "Town Constable"
+	description = "You are the town's resident doctor. Provide medical services, mix chemicals, grow medicinal plants. Just remember, you work for the town first and foremost."
+
+	outfit = /datum/outfit/job/f13towndoctor
+	loadout_options = list(
+		/datum/outfit/loadout/towndoctor,
+		/datum/outfit/loadout/apothecary,
+		/datum/outfit/loadout/nurse)
+	access = list(ACCESS_BAR, ACCESS_CLINIC)
+	minimal_access = list(ACCESS_BAR, ACCESS_CLINIC)
+
+	matchmaking_allowed = list(
+		/datum/matchmaking_pref/friend = list(
+			/datum/job/kebab,
+		),
+		/datum/matchmaking_pref/rival = list(
+			/datum/job/kebab,
+		),
+	)
+
+/datum/outfit/job/kebab/f13towndoctor
+	name = "Town Doctor"
+	jobtype = /datum/job/kebab/f13towndoctor
+
+	ears = /obj/item/radio/headset/headset_doctor
+	neck = /obj/item/clothing/neck/stethoscope
+	uniform = /obj/item/clothing/under/f13/medic
+	gloves = /obj/item/pda/medical
+	l_pocket = /obj/item/storage/bag/chemistry
+	r_pocket = /obj/item/storage/bag/money/small/settler
+	id = /obj/item/card/id/dogtag/town
+	backpack = /obj/item/storage/backpack/medic
+	satchel = /obj/item/storage/backpack/satchel/med
+	duffelbag =	/obj/item/storage/backpack/duffelbag/med
+
+/datum/outfit/loadout/towndoctor
+	name = "Town Doctor"
+	uniform = /obj/item/clothing/under/f13/doctor
+	suit = /obj/item/clothing/suit/flakjack
+	shoes = /obj/item/clothing/shoes/jackboots
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/pistol/m1911/custom = 1,
+		/obj/item/ammo_box/magazine/m45 = 3,
+		/obj/item/stack/medical/bruise_pack = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 4)
+
+/datum/outfit/loadout/apothecary
+	name = "Apothecary"
+	head = /obj/item/clothing/head/plaguedoctorhat
+	mask = /obj/item/clothing/mask/gas/plaguedoctor
+	suit = /obj/item/clothing/suit/bio_suit/plaguedoctorsuit
+	shoes = /obj/item/clothing/shoes/sandal
+	backpack_contents = list(
+		/obj/item/reagent_containers/glass/primitive_chem_isolator = 1,
+		/obj/item/reagent_containers/glass/mortar = 1,
+		/obj/item/storage/box/medicine/poultice5 = 1,
+		/obj/item/storage/box/medicine/poultice5 = 1)
+
+/datum/outfit/loadout/nurse
+	name = "Nurse"
+	head = /obj/item/clothing/head/nursehat
+	uniform = /obj/item/clothing/under/rank/nursesuit
+	shoes = /obj/item/clothing/shoes/sneakers/white
+	backpack_contents = list(
+		/obj/item/flashlight/pen = 1,
+		/obj/item/reagent_containers/food/snacks/lollipop = 5,
+		/obj/item/stack/medical/suture/medicated = 1,
+		/obj/item/stack/medical/mesh/advanced = 1,
+		/obj/item/hypospray/mkii/CMO = 1)
+
+/datum/outfit/job/f13towndoctor/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
+	ADD_TRAIT(H, TRAIT_MEDICALGRADUATE, src)
+	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
