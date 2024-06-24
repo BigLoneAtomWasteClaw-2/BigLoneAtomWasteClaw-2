@@ -32,7 +32,7 @@
 	INVOKE_ASYNC(src, .proc/try_heal, M, user)
 
 /obj/item/stack/medical/proc/try_heal(mob/living/M, mob/user, silent = FALSE)
-	if(!M.can_inject(user, TRUE))
+	if(!M.can_inject(user, TRUE, bypass_immunity = TRUE)) //We bypass immunity for people with berserker's rights -Pokee
 		return
 	if(M == user)
 		if(!silent)
