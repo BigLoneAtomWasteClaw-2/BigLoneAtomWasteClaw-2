@@ -1294,7 +1294,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 	if(H.stat != DEAD)
 		H.adjust_thirst(-THIRST_FACTOR)
 		handle_thirst(H)
-		handle_hunger_damage(H)
+		//handle_hunger_damage(H)
 
 	if (H.nutrition > NUTRITION_LEVEL_FULL)
 		if(H.overeatduration < 600) //capped so people don't take forever to unfat
@@ -1344,7 +1344,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		if(0 to NUTRITION_LEVEL_DEADLY_STARVING)
 			H.throw_alert("nutrition", /obj/screen/alert/deadly_starving)
 
-/datum/species/proc/handle_hunger_damage(mob/living/carbon/human/H)
+/*/datum/species/proc/handle_hunger_damage(mob/living/carbon/human/H)
 	if(!H.client || (H.client && (H.client.inactivity / 600 > 5))) // Let's not kill AFK mobs
 		return
 
@@ -1367,7 +1367,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 				H.adjustBruteLoss(10, 0)
 			if(prob(33))
 				H.adjustToxLoss(1, 0)
-	return
+	return*/
 
 /datum/species/proc/handle_thirst(mob/living/carbon/human/H)
 	if(!H.client || (H.client && (H.client.inactivity / 600 > 5)))
@@ -1380,16 +1380,16 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			H.throw_alert("thirst", /obj/screen/alert/slightly_thirsty)
 		if(THIRST_LEVEL_DEADLY_THIRSTY to THIRST_LEVEL_THIRSTY)
 			H.throw_alert("thirst", /obj/screen/alert/thirsty)
-			if((H.getStaminaLoss() <= 50) && prob(5))
+			/*if((H.getStaminaLoss() <= 50) && prob(5))
 				to_chat(H, "<span class='warning'>You need some water...</span>")
-				H.adjustStaminaLoss(10, 0)
+				H.adjustStaminaLoss(10, 0)*/
 		if(0 to THIRST_LEVEL_DEADLY_THIRSTY)
 			H.throw_alert("thirst", /obj/screen/alert/deadly_thirsty)
-			if((H.getStaminaLoss() <= 90) && prob(12))
+		/*	if((H.getStaminaLoss() <= 90) && prob(12))
 				to_chat(H, "<span class='warning'>You feel weak...</span>")
 				H.adjustStaminaLoss(20, 0)
 			if(prob(33))
-				H.adjustToxLoss(1, 0)
+				H.adjustToxLoss(1, 0)*/
 	return
 
 /datum/species/proc/update_health_hud(mob/living/carbon/human/H)
