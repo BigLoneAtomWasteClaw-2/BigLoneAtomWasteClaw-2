@@ -32,8 +32,8 @@
 /obj/item/detective_scanner/attack_self(mob/user)
 	if(log.len && !scanning)
 		scanning = TRUE
-		to_chat(user, "<span class='notice'>Printing report, please wait...</span>")
-		addtimer(CALLBACK(src, .proc/PrintReport), 100)
+		to_chat(user, span_notice("Printing report, please wait..."))
+		addtimer(CALLBACK(src, PROC_REF(PrintReport)), 100)
 	else
 		to_chat(user, "<span class='notice'>The scanner has no logs or is in use.</span>")
 

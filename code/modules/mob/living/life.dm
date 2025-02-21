@@ -66,7 +66,7 @@
 	handle_mutations_and_radiation()
 
 	//Breathing, if applicable
-	handle_breathing(times_fired)
+	//handle_breathing(times_fired)
 
 	if (QDELETED(src)) // diseases can qdel the mob via transformations
 		return FALSE
@@ -94,16 +94,16 @@
 		handle_diginvis() //AI becomes unable to see mob
 
 	if((movement_type & FLYING) && !(movement_type & FLOATING))	//TODO: Better floating
-		float(TRUE)
+		INVOKE_ASYNC(src, TYPE_PROC_REF(/atom/movable,float), TRUE)
 
 	if(!loc)
 		return FALSE
 
-	var/datum/gas_mixture/environment = loc.return_air()
+	// var/datum/gas_mixture/environment = loc.return_air()
 
-	//Handle temperature/pressure differences between body and environment
-	if(environment)
-		handle_environment(environment)
+	// //Handle temperature/pressure differences between body and environment
+	// if(environment)
+	// 	handle_environment(environment)
 
 	handle_fire()
 
@@ -209,7 +209,7 @@
 /mob/living/proc/gravity_animate()
 	if(!get_filter("gravity"))
 		add_filter("gravity",1, GRAVITY_MOTION_BLUR)
-	INVOKE_ASYNC(src, .proc/gravity_pulse_animation)
+	INVOKE_ASYNC(src, PROC_REF(gravity_pulse_animation))
 
 /mob/living/proc/gravity_pulse_animation()
 	animate(get_filter("gravity"), y = 1, time = 10)

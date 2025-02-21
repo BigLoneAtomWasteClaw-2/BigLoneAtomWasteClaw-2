@@ -25,7 +25,7 @@
 /obj/effect/accelerated_particle/New(loc)
 	..()
 
-	addtimer(CALLBACK(src, .proc/move), 1)
+	addtimer(CALLBACK(src, PROC_REF(move)), 1)
 
 
 /obj/effect/accelerated_particle/Bump(atom/A)
@@ -45,7 +45,7 @@
 
 /obj/effect/accelerated_particle/Crossed(atom/A)
 	if(isliving(A))
-		toxmob(A)
+		INVOKE_ASYNC(src, PROC_REF(toxmob), A)
 
 
 /obj/effect/accelerated_particle/ex_act(severity, target)

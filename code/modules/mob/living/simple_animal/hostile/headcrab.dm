@@ -48,8 +48,8 @@
 				to_chat(src, "<span class='userdanger'>A foreign presence repels us from this body. Perhaps we should try to infest another?</span>")
 				return
 			Infect(target)
-			to_chat(src, "<span class='userdanger'>With our egg laid, our death approaches rapidly...</span>")
-			addtimer(CALLBACK(src, .proc/death), 100)
+			to_chat(src, span_userdanger("With our egg laid, our death approaches rapidly..."))
+			addtimer(CALLBACK(src, PROC_REF(death)), 100)
 
 /obj/item/organ/body_egg/changeling_egg
 	name = "changeling egg"

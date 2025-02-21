@@ -66,7 +66,7 @@
 			var/mob/M = AM
 			to_chat(M, "<span class='notice'>[icon2html(src, M)] Squeak!</span>")
 	if(istype(AM, /obj/item/reagent_containers/food/snacks/royalcheese))
-		evolve()
+		INVOKE_ASYNC(src, PROC_REF(evolve))
 		qdel(AM)
 	..()
 

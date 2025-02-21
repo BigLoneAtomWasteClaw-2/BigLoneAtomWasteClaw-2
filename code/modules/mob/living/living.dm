@@ -1,5 +1,6 @@
 /mob/living/Initialize()
 	. = ..()
+
 	register_init_signals()
 	if(unique_name)
 		name = "[name] ([rand(1, 1000)])"
@@ -434,12 +435,12 @@
 		return
 	else
 		src.reset_perspective(T)
-		RegisterSignal(src, COMSIG_MOB_CLIENT_CHANGE_VIEW, .proc/stop_looking_up) //no binos/scops
-		RegisterSignal(src, COMSIG_MOVABLE_MOVED, .proc/stop_looking_up)
-		RegisterSignal(src, COMSIG_LIVING_STATUS_KNOCKDOWN, .proc/stop_looking_up)
-		RegisterSignal(src, COMSIG_LIVING_STATUS_PARALYZE, .proc/stop_looking_up)
-		RegisterSignal(src, COMSIG_LIVING_STATUS_UNCONSCIOUS, .proc/stop_looking_up)
-		RegisterSignal(src, COMSIG_LIVING_STATUS_SLEEP, .proc/stop_looking_up)
+		RegisterSignal(src, COMSIG_MOB_CLIENT_CHANGE_VIEW, PROC_REF(stop_looking_up)) //no binos/scops
+		RegisterSignal(src, COMSIG_MOVABLE_MOVED, PROC_REF(stop_looking_up))
+		RegisterSignal(src, COMSIG_LIVING_STATUS_KNOCKDOWN, PROC_REF(stop_looking_up))
+		RegisterSignal(src, COMSIG_LIVING_STATUS_PARALYZE, PROC_REF(stop_looking_up))
+		RegisterSignal(src, COMSIG_LIVING_STATUS_UNCONSCIOUS, PROC_REF(stop_looking_up))
+		RegisterSignal(src, COMSIG_LIVING_STATUS_SLEEP, PROC_REF(stop_looking_up))
 
 /mob/living/proc/stop_looking_up()
 	reset_perspective(null)
@@ -857,7 +858,7 @@
 	else
 		throw_alert("gravity", /obj/screen/alert/weightless)
 	if(!override && !is_flying())
-		float(!has_gravity)
+		INVOKE_ASYNC(src, TYPE_PROC_REF(/atom/movable,float), !has_gravity)
 
 /mob/living/float(on)
 	if(throwing)

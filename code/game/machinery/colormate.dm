@@ -90,7 +90,7 @@
 	if(inserted)
 		return
 	if(user)
-		visible_message("<span class='warning'>[user] stuffs [victim] into [src]!</span>")
+		visible_message(span_warning("[user] stuffs [victim] into [src]!"))
 	inserted = victim
 	inserted.forceMove(src)
 

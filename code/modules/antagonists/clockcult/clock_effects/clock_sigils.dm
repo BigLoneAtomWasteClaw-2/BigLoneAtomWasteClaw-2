@@ -15,6 +15,9 @@
 	var/check_antimagic = TRUE
 	var/check_holy = FALSE
 
+/obj/effect/clockwork/sigil/Initialize()
+	. = ..()
+
 /obj/effect/clockwork/sigil/attackby(obj/item/I, mob/living/user, params)
 	if(I.force)
 		if(is_servant_of_ratvar(user) && user.a_intent != INTENT_HARM)
@@ -52,7 +55,7 @@
 						L.visible_message("<span class='warning'>[L]'s [I.name] [resist_string], protecting [L.p_them()] from [src]'s effects!</span>", \
 						"<span class='userdanger'>Your [I.name] [resist_string], protecting you!</span>")
 					return
-				sigil_effects(L)
+				INVOKE_ASYNC(src, PROC_REF(sigil_effects), L)
 
 /obj/effect/clockwork/sigil/proc/sigil_effects(mob/living/L)
 
@@ -137,8 +140,8 @@
 		if(glow)
 			qdel(glow)
 		animate(src, color = oldcolor, time = 20, flags = ANIMATION_END_NOW)
-		addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 20)
-		visible_message("<span class='warning'>[src] slowly stops glowing!</span>")
+		addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_atom_colour)), 20)
+		visible_message(span_warning("[src] slowly stops glowing!"))
 		return
 	if(is_eligible_servant(L))
 		to_chat(L, "<span class='heavy_brass'>\"You belong to me now.\"</span>")
@@ -170,8 +173,8 @@
 			else
 				to_chat(M, "<span class='heavy_brass'>[message] [L.real_name]!</span>")
 	animate(src, color = oldcolor, time = 20, flags = ANIMATION_END_NOW)
-	addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 20)
-	visible_message("<span class='warning'>[src] slowly stops glowing!</span>")
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_atom_colour)), 20)
+	visible_message(span_warning("[src] slowly stops glowing!"))
 
 
 //Sigil of Transmission: Serves as an access point for powered structures.
@@ -233,8 +236,8 @@
 /obj/effect/clockwork/sigil/transmission/proc/charge_cyborg(mob/living/silicon/robot/cyborg)
 	if(!cyborg_checks(cyborg))
 		return
-	to_chat(cyborg, "<span class='brass'>You start to charge from the [sigil_name]...</span>")
-	if(!do_after(cyborg, 50, target = src, extra_checks = CALLBACK(src, .proc/cyborg_checks, cyborg, TRUE)))
+	to_chat(cyborg, span_brass("You start to charge from the [sigil_name]..."))
+	if(!do_after(cyborg, 50, target = src, extra_checks = CALLBACK(src, PROC_REF(cyborg_checks), cyborg, TRUE)))
 		return
 	var/giving_power = min(FLOOR(cyborg.cell.maxcharge - cyborg.cell.charge, MIN_CLOCKCULT_POWER), get_clockwork_power()) //give the borg either all our power or their missing power floored to MIN_CLOCKCULT_POWER
 	if(adjust_clockwork_power(-giving_power))
@@ -243,7 +246,7 @@
 		cyborg.color = list("#EC8A2D", "#EC8A2D", "#EC8A2D", rgb(0,0,0))
 		cyborg.apply_status_effect(STATUS_EFFECT_POWERREGEN, giving_power * 0.1) //ten ticks, restoring 10% each
 		animate(cyborg, color = previous_color, time = 100)
-		addtimer(CALLBACK(cyborg, /atom/proc/update_atom_colour), 100)
+		addtimer(CALLBACK(cyborg, TYPE_PROC_REF(/atom, update_atom_colour)), 100)
 
 /obj/effect/clockwork/sigil/transmission/proc/cyborg_checks(mob/living/silicon/robot/cyborg, silent)
 	if(!cyborg.cell)

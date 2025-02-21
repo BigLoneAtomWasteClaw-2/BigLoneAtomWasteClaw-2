@@ -24,6 +24,12 @@
 	update_icon()
 	req_one_access = get_all_accesses() + get_all_centcom_access()
 
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
+
+
 /obj/machinery/recycler/deconstruct(disassembled = TRUE)
 	safety_mode = TRUE //to stop stock parts and circuit from being deleted.
 	return ..()
@@ -96,9 +102,9 @@
 	if(move_dir == eat_dir)
 		return TRUE
 
-/obj/machinery/recycler/Crossed(atom/movable/AM)
-	eat(AM)
-	. = ..()
+/obj/machinery/recycler/proc/on_entered(datum/source, atom/movable/AM)
+	SIGNAL_HANDLER
+	INVOKE_ASYNC(src, PROC_REF(eat), AM)
 
 /obj/machinery/recycler/proc/eat(atom/AM0)
 	if(stat & (BROKEN|NOPOWER) || safety_mode)
@@ -180,7 +186,7 @@
 	safety_mode = TRUE
 	update_icon()
 	L.forceMove(loc)
-	addtimer(CALLBACK(src, .proc/reboot), SAFETY_COOLDOWN)
+	addtimer(CALLBACK(src, PROC_REF(reboot)), SAFETY_COOLDOWN)
 
 /obj/machinery/recycler/proc/reboot()
 	playsound(src, 'sound/machines/ping.ogg', 50, 0)

@@ -214,8 +214,7 @@
 /obj/effect/hotspot/Crossed(atom/movable/AM, oldLoc)
 	..()
 	if(isliving(AM))
-		var/mob/living/L = AM
-		L.fire_act(temperature, volume)
+		INVOKE_ASYNC(AM, TYPE_PROC_REF(/atom, fire_act), temperature, volume)
 
 /obj/effect/hotspot/singularity_pull()
 	return

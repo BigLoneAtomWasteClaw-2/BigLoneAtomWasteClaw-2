@@ -118,14 +118,8 @@
 	weather_duration = rand(weather_duration_lower, weather_duration_upper)
 	START_PROCESSING(SSweather, src)			//The reason this doesn't start and stop at main stage is because processing list is also used to see active running weathers (for example, you wouldn't want two ash storms starting at once.)
 	update_areas()
-	for(var/M in GLOB.player_list)
-		var/turf/mob_turf = get_turf(M)
-		if(mob_turf && (mob_turf.z in impacted_z_levels))
-			if(telegraph_message)
-				to_chat(M, telegraph_message)
-			if(telegraph_sound)
-				SEND_SOUND(M, sound(telegraph_sound))
-	addtimer(CALLBACK(src, .proc/start), telegraph_duration)
+	alert_players(telegraph_message, telegraph_sound)
+	addtimer(CALLBACK(src, PROC_REF(start)), telegraph_duration)
 
 /**
  * Starts the actual weather and effects from it
@@ -139,14 +133,8 @@
 		return
 	stage = MAIN_STAGE
 	update_areas()
-	for(var/M in GLOB.player_list)
-		var/turf/mob_turf = get_turf(M)
-		if(mob_turf && (mob_turf.z in impacted_z_levels))
-			if(weather_message)
-				to_chat(M, weather_message)
-			if(weather_sound)
-				SEND_SOUND(M, sound(weather_sound))
-	addtimer(CALLBACK(src, .proc/wind_down), weather_duration)
+	alert_players(weather_message, weather_sound)
+	addtimer(CALLBACK(src, PROC_REF(wind_down)), weather_duration)
 
 /**
  * Weather enters the winding down phase, stops effects
@@ -160,6 +148,12 @@
 		return
 	stage = WIND_DOWN_STAGE
 	update_areas()
+	alert_players(end_message, end_sound)
+	addtimer(CALLBACK(src, PROC_REF(end)), end_duration)
+
+/datum/weather/proc/alert_players(message, sound_play)
+	if(!message && !sound_play)
+		return FALSE
 	for(var/M in GLOB.player_list)
 		var/turf/mob_turf = get_turf(M)
 		if(mob_turf && (mob_turf.z in impacted_z_levels))

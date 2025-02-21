@@ -7,6 +7,9 @@
 	invisibility = INVISIBILITY_ABSTRACT // nope cant see this shit
 	anchored = TRUE
 
+/obj/effect/step_trigger/Initialize()
+	. = ..()
+
 /obj/effect/step_trigger/proc/Trigger(atom/movable/A)
 	return 0
 
@@ -14,11 +17,8 @@
 	..()
 	if(!H)
 		return
-	if(isobserver(H) && !affect_ghosts)
-		return
-	if(!ismob(H) && mobs_only)
-		return
-	Trigger(H)
+
+	INVOKE_ASYNC(src, PROC_REF(Trigger), H)
 
 
 /obj/effect/step_trigger/singularity_act()

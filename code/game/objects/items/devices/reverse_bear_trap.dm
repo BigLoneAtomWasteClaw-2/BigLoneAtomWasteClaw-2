@@ -42,8 +42,8 @@
 		playsound(src, 'sound/machines/microwave/microwave-end.ogg', 100, FALSE)
 		soundloop.stop()
 		soundloop2.stop()
-		to_chat(loc, "<span class='userdanger'>*ding*</span>")
-		addtimer(CALLBACK(src, .proc/snap), 2)
+		to_chat(loc, span_userdanger("*ding*"))
+		addtimer(CALLBACK(src, PROC_REF(snap)), 2)
 
 /obj/item/reverse_bear_trap/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(iscarbon(user))

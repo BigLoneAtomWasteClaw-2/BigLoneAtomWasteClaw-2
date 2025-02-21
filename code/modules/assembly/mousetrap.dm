@@ -7,6 +7,8 @@
 	attachable = TRUE
 	var/armed = FALSE
 
+/obj/item/assembly/mousetrap/Initialize()
+	. = ..()
 
 /obj/item/assembly/mousetrap/examine(mob/user)
 	. = ..()
@@ -112,8 +114,6 @@
 					triggered(MM)
 		else if(AM.density) // For mousetrap grenades, set off by anything heavy
 			triggered(AM)
-	..()
-
 
 /obj/item/assembly/mousetrap/on_found(mob/finder)
 	if(armed)

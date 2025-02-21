@@ -442,13 +442,13 @@
 	maxcharge = 2000
 
 /obj/item/stock_parts/cell/ammo/mfc/update_icon()
-	switch(charge)
-		if (1001 to 2000)
+	if(charge)
+		if (charge >= (maxcharge/2)+1)
 			icon_state = "mfc-full"
-		if (51 to 1000)
+		if (charge >= ((maxcharge/4)+1) && charge <= (maxcharge/2))
 			icon_state = "mfc-half"
-		if (0 to 50)
-			icon_state = "mfc-empty"
+	else
+		icon_state = "mfc-empty"
 	. = ..()
 
 /obj/item/stock_parts/cell/ammo/ultracite
@@ -501,13 +501,13 @@
 	maxcharge = 2400
 
 /obj/item/stock_parts/cell/ammo/ecp/update_icon()
-	switch(charge)
-		if (1501 to 2400)
+	if(charge)
+		if (charge >= ((maxcharge/2)+1))
 			icon_state = "ecp-full"
-		if (101 to 1500)
+		if (charge >= ((maxcharge/4)+1) && charge <= (maxcharge/2))
 			icon_state = "ecp-half"
-		if (0 to 100)
-			icon_state = "ecp-empty"
+	else
+		icon_state = "ecp-empty"
 	. = ..()
 
 // Alien power cell

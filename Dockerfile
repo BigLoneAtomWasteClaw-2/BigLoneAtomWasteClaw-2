@@ -58,5 +58,5 @@ COPY --from=rust_g /rust_g/target/release/librust_g.so /root/.byond/bin/rust_g
 COPY --from=build /deploy ./
 
 VOLUME [ "/fortune13/config", "/fortune13/data" ]
-
 ENTRYPOINT [ "DreamDaemon", "fortune13.dmb", "-port", "1337", "-trusted", "-close", "-verbose" ]
+EXPOSE 54321

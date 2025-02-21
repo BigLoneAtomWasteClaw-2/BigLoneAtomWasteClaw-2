@@ -16,7 +16,6 @@
 
 /obj/structure/campfire/Initialize()
 	. = ..()
-	campfire_loop = new(list(src), FALSE)
 
 /obj/structure/campfire/Destroy()
 	SSobj.processing.Remove(src)
@@ -75,7 +74,7 @@
 
 /obj/structure/campfire/Crossed(atom/movable/AM)
 	if(fired)
-		burn_process()
+		INVOKE_ASYNC(src, PROC_REF(burn_process))
 
 /obj/structure/campfire/process()
 	if(fuel <= 0)

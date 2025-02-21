@@ -335,8 +335,8 @@
 	if(radio_short_timerid)
 		deltimer(radio_short_timerid)
 	radio_short = TRUE
-	to_chat(src, "<span class='danger'>Your radio shorts out!</span>")
-	radio_short_timerid = addtimer(CALLBACK(src, .proc/unshort_radio), radio_short_cooldown, flags = TIMER_STOPPABLE)
+	to_chat(src, span_danger("Your radio shorts out!"))
+	radio_short_timerid = addtimer(CALLBACK(src, PROC_REF(unshort_radio)), radio_short_cooldown, flags = TIMER_STOPPABLE)
 
 /mob/living/silicon/pai/proc/unshort_radio()
 	radio_short = FALSE

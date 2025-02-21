@@ -4,7 +4,13 @@
 /datum/component/waddling/Initialize()
 	if(!isliving(parent))
 		return COMPONENT_INCOMPATIBLE
-	RegisterSignal(parent, list(COMSIG_MOVABLE_MOVED), .proc/Waddle)
+	if(!isnull(amount_to_waddle))
+		waddle_amount = amount_to_waddle
+	if(!isnull(amount_to_bob_up))
+		up_waddle_time = amount_to_bob_up
+	if(!isnull(amount_to_bob_side))
+		side_waddle_time = amount_to_bob_side
+	RegisterSignal(parent, list(COMSIG_MOVABLE_MOVED), PROC_REF(Waddle))
 
 /datum/component/waddling/proc/Waddle()
 	var/mob/living/L = parent

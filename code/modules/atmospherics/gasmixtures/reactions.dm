@@ -6,9 +6,8 @@
 	for(var/r in subtypesof(/datum/gas_reaction))
 		var/datum/gas_reaction/reaction = r
 		reaction = new r
-		if(!reaction.exclude)
-			. += reaction
-	sortTim(., /proc/cmp_gas_reaction)
+		. += reaction
+	sortTim(., GLOBAL_PROC_REF(cmp_gas_reaction))
 
 /proc/cmp_gas_reaction(datum/gas_reaction/a, datum/gas_reaction/b) // compares lists of reactions by the maximum priority contained within the list
 	return b.priority - a.priority

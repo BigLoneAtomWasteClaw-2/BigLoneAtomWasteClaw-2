@@ -16,6 +16,9 @@
 	var/obj/machinery/field/generator/FG1 = null
 	var/obj/machinery/field/generator/FG2 = null
 
+/obj/machinery/field/containment/Initialize()
+	. = ..()
+
 /obj/machinery/field/containment/Destroy()
 	FG1.fields -= src
 	FG2.fields -= src
@@ -58,10 +61,10 @@
 
 /obj/machinery/field/containment/Crossed(mob/mover)
 	if(isliving(mover))
-		shock(mover)
+		INVOKE_ASYNC(src, PROC_REF(shock), mover)
 
 	if(ismachinery(mover) || isstructure(mover) || ismecha(mover))
-		bump_field(mover)
+		INVOKE_ASYNC(src, PROC_REF(bump_field), mover)
 
 /obj/machinery/field/containment/proc/set_master(master1,master2)
 	if(!master1 || !master2)
@@ -131,4 +134,4 @@
 	do_sparks(5, TRUE, AM.loc)
 	var/atom/target = get_edge_target_turf(AM, get_dir(src, get_step_away(AM, src)))
 	AM.throw_at(target, 200, 4)
-	addtimer(CALLBACK(src, .proc/clear_shock), 5)
+	addtimer(CALLBACK(src, PROC_REF(clear_shock)), 5)

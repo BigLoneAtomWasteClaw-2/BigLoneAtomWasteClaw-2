@@ -15,20 +15,18 @@ PROCESSING_SUBSYSTEM_DEF(weather)
 	var/weather_on_start = FALSE
 
 /datum/controller/subsystem/processing/weather/fire()
-	. = ..()		//Active weather is handled by . = ..() processing subsystem base fire().
-
-	// start random weather on relevant levels
-	for(var/z in eligible_zlevels)
-		var/possible_weather = eligible_zlevels[z]
-		var/datum/weather/W = pickweight(possible_weather)
-		if(weather_on_start)
-			run_weather(W, list(text2num(z)), initial(W.weather_duration_upper))
-		eligible_zlevels -= z
-		var/randTime = rand(15000, 18000)
-		addtimer(CALLBACK(src, .proc/make_eligible, z, possible_weather), randTime + initial(W.weather_duration_upper), TIMER_UNIQUE) //Around 25-30 minutes between weathers
-		next_hit_by_zlevel["[z]"] = world.time + randTime + initial(W.telegraph_duration)
-	if(!weather_on_start)
-		weather_on_start = TRUE
+	. = ..() //Active weather is handled by . = ..() processing subsystem base fire().
+	if(COOLDOWN_FINISHED(src, wind_change_cooldown))
+		set_wind_direction()
+		COOLDOWN_START(src, wind_change_cooldown, rand(5 MINUTES, 15 MINUTES))
+	// start random weather on relevant levels - the SAME weather on all those Zs!
+	if(weather_queued || !LAZYLEN(weather_rolls))
+		return FALSE
+	var/datum/weather/W = pickweight(weather_rolls)
+	var/randTime = rand(WEATHER_WAIT_MIN, WEATHER_WAIT_MAX)
+	timerid = addtimer(CALLBACK(src, PROC_REF(run_weather), W), randTime + initial(W.weather_duration_upper), TIMER_UNIQUE | TIMER_STOPPABLE) //Around 25-30 minutes between weathers
+	next_hit_by_zlevel = world.time + randTime + initial(W.telegraph_duration)
+	weather_queued = TRUE // weather'll set this to FALSE when it ends
 
 /datum/controller/subsystem/processing/weather/Initialize(start_timeofday)
 	for(var/V in subtypesof(/datum/weather))

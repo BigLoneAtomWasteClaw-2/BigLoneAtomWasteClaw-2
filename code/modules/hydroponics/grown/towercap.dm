@@ -164,6 +164,7 @@
 
 /obj/structure/bonfire/prelit/Initialize()
 	. = ..()
+
 	StartBurning()
 
 /obj/structure/bonfire/CanPass(atom/movable/mover, border_dir)
@@ -258,7 +259,7 @@
 
 /obj/structure/bonfire/Crossed(atom/movable/AM)
 	if(burning & !grill)
-		Burn()
+		INVOKE_ASYNC(src, PROC_REF(Burn))
 
 /obj/structure/bonfire/proc/Burn()
 	var/turf/current_location = get_turf(src)
