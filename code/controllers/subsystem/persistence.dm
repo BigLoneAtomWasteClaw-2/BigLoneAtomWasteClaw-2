@@ -45,7 +45,6 @@ SUBSYSTEM_DEF(persistence)
 	LoadPanicBunker()
 	SSjob.AddMapJobs() //shut up
 	LoadPaintings() //i am in physical pain
-	LoadPanicBunker()
 	return ..()
 
 /datum/controller/subsystem/persistence/proc/LoadSatchels()
@@ -253,7 +252,6 @@ SUBSYSTEM_DEF(persistence)
 	SavePanicBunker()
 	SavePaintings()
 	SaveScars()
-	SavePanicBunker()
 
 /datum/controller/subsystem/persistence/proc/LoadPanicBunker()
 	var/bunker_path = file("data/bunker_passthrough.json")
