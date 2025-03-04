@@ -18,7 +18,7 @@
 	icon_dead = "punga-dead"
 	icon_harvest = "punga-harvest"
 	genes = list(/datum/plant_gene/trait/plant_type/fungal_metabolism, /datum/plant_gene/trait/repeated_harvest)
-	reagents_add = list(/datum/reagent/medicine/charcoal = 0.1, /datum/reagent/consumable/nutriment = 0.1, /datum/reagent/medicine/radaway = 0.05)
+	reagents_add = list(/datum/reagent/consumable/nutriment = 0.1, /datum/reagent/medicine/radaway = 0.1)
 
 /obj/item/reagent_containers/food/snacks/grown/pungafruit
 	seed = /obj/item/seeds/punga
